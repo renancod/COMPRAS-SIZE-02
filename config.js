@@ -1,2 +1,2 @@
 // URL do Web App (Apps Script > Implantar > App da Web). Única configuração do frontend.
-const API_URL = 'https://script.google.com/macros/s/AKfycby7HjNGUZs_eE1p0r4EX81aunstC9UC3WLH3Hz90k9Aup0ryZSHgxVARAJDF2sCoP8qxg/exec';
+const API_URL = 'https://script.google.com/macros/s/AKfycbx23OWZ0B1JrC81keHfT19xqimobagJ1WBxQ2IADaudf3DBnJXX4DFir64rvVNr-pcA/exec';
