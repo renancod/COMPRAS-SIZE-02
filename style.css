@@ -1,0 +1,43 @@
+:root{--navy:#0E2A6B;--teal:#04857A;--line:#E3E9EC;--mute:#5B6B82;--err:#C0392B;--bg:#F4F8F8}
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:#1A2433;min-height:100vh}
+header{display:flex;align-items:center;gap:12px;padding:14px 16px;background:#fff;border-bottom:3px solid var(--teal);position:sticky;top:0}
+header h1{font-size:1.05rem;margin:0;color:var(--navy)}
+header .quem{margin-left:auto;font-size:.85rem;color:var(--mute)}
+header .quem a{color:var(--teal)}
+main{padding:16px;max-width:480px;margin:0 auto}
+.card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:18px;display:grid;gap:12px}
+label{display:grid;gap:4px;font-size:.88rem;font-weight:600;color:var(--navy)}
+input,select{font:inherit;padding:9px 10px;border:1px solid var(--line);border-radius:8px;width:100%}
+.btn{background:var(--teal);color:#fff;border:0;border-radius:8px;padding:11px;font-weight:700;cursor:pointer}
+.btn:disabled{opacity:.6;cursor:progress}
+.msg{padding:10px;border-radius:8px;font-size:.9rem}
+.msg.erro{background:#FBE9E7;color:var(--err)}
+.msg.ok{background:#DFF3E9;color:#04564F}
+.vazio{text-align:center;color:var(--mute);padding:30px}
+
+main{display:grid;gap:14px}
+.sub{font-size:1rem;color:var(--navy);margin:8px 0 0;display:flex;justify-content:space-between;align-items:baseline}
+.sub a{font-size:.8rem;font-weight:400;color:var(--teal)}
+.pedido{background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px;margin-top:10px;display:grid;gap:8px}
+.pedido.cancelado{opacity:.65}
+.pedido .topo{display:flex;justify-content:space-between;align-items:center;color:var(--navy)}
+.pedido .mat{font-size:.95rem}
+.urg{background:var(--err);color:#fff;border-radius:4px;padding:1px 5px;font-size:.7rem;font-weight:700}
+.tag{font-size:.75rem;font-weight:700;padding:3px 9px;border-radius:99px;background:#FFF2CC;color:#7A5B00}
+.tag.s-emcotação{background:#DDEBF7;color:#1F4E79}
+.tag.s-comprado{background:#E4DFEC;color:#4B3A78}
+.tag.s-pago{background:#FCE4D6;color:#8A4B14}
+.tag.s-entregue{background:#DFF3E9;color:#04564F}
+.tag.s-cancelado{background:#E5E5E5;color:#555}
+.passos{list-style:none;display:flex;padding:0;margin:4px 0 0}
+.passos li{flex:1;text-align:center;font-size:.64rem;color:var(--mute);position:relative}
+.passos li span{display:block;width:14px;height:14px;border-radius:50%;background:var(--line);margin:0 auto 4px;position:relative;z-index:1}
+.passos li::before{content:'';position:absolute;top:6px;left:-50%;width:100%;height:3px;background:var(--line)}
+.passos li:first-child::before{display:none}
+.passos li.feito span,.passos li.atual span{background:var(--teal)}
+.passos li.feito::before,.passos li.atual::before{background:var(--teal)}
+.passos li.atual{color:var(--navy);font-weight:700}
+.passos li.atual span{box-shadow:0 0 0 3px #04857A33}
+.info{font-size:.82rem;color:var(--mute);display:grid;gap:2px}
+.info b{color:#1A2433}
